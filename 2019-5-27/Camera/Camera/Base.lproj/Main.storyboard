@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Camera" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SVg-bc-t1l">
+                                <rect key="frame" x="0.0" y="734" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="camera" id="g8Z-NZ-5se">
+                                        <connections>
+                                            <action selector="launchCamera:" destination="BYZ-38-t0r" id="D1l-rL-kJs"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="w64-Aa-a74">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="w64-Aa-a74" firstAttribute="leading" secondItem="SVg-bc-t1l" secondAttribute="leading" id="4dA-xA-BRC"/>
+                            <constraint firstItem="w64-Aa-a74" firstAttribute="trailing" secondItem="SVg-bc-t1l" secondAttribute="trailing" id="9pf-gJ-dIM"/>
+                            <constraint firstItem="SVg-bc-t1l" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="A1W-wg-jIx"/>
+                            <constraint firstItem="w64-Aa-a74" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="HRv-pw-LDF"/>
+                            <constraint firstItem="SVg-bc-t1l" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="690" id="OTZ-hb-ZXj"/>
+                            <constraint firstAttribute="bottom" secondItem="w64-Aa-a74" secondAttribute="bottom" id="Wr9-Ja-V6n"/>
+                            <constraint firstItem="w64-Aa-a74" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ZOC-nF-EGk"/>
+                            <constraint firstAttribute="trailing" secondItem="w64-Aa-a74" secondAttribute="trailing" id="gQP-Ml-rc4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="w64-Aa-a74" id="Kby-9Q-3lq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.40000000000001" y="129.31034482758622"/>
+        </scene>
+    </scenes>
+</document>

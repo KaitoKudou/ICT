@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7FC0B8346F61CDB7EB7D22B4 /* Pods_SummerVacationHomework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F34C5215EEB44D7A7433773 /* Pods_SummerVacationHomework.framework */; };
+		C60CA1FA23028543002DB6D0 /* RequestWether.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60CA1F923028542002DB6D0 /* RequestWether.swift */; };
+		C60CA1FC23028DB1002DB6D0 /* ResponseWether.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60CA1FB23028DB1002DB6D0 /* ResponseWether.swift */; };
+		C693FEF2230166AC003B5FE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C693FEF1230166AC003B5FE1 /* AppDelegate.swift */; };
+		C693FEF4230166AC003B5FE1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C693FEF3230166AC003B5FE1 /* ViewController.swift */; };
+		C693FEF7230166AC003B5FE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C693FEF5230166AC003B5FE1 /* Main.storyboard */; };
+		C693FEF9230166AD003B5FE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C693FEF8230166AD003B5FE1 /* Assets.xcassets */; };
+		C693FEFC230166AD003B5FE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C693FEFA230166AD003B5FE1 /* LaunchScreen.storyboard */; };
+		C6D338D523068F8A00BD3EED /* JSONDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D338D423068F8A00BD3EED /* JSONDataParser.swift */; };
+		C6E50AEE230C36860007F114 /* SearchWeatherRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E50AED230C36860007F114 /* SearchWeatherRequest.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4F34C5215EEB44D7A7433773 /* Pods_SummerVacationHomework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SummerVacationHomework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5166D58790380C778C0C9922 /* Pods-SummerVacationHomework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SummerVacationHomework.release.xcconfig"; path = "Target Support Files/Pods-SummerVacationHomework/Pods-SummerVacationHomework.release.xcconfig"; sourceTree = "<group>"; };
+		B676F386B88F05CCB9CC90BF /* Pods-SummerVacationHomework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SummerVacationHomework.debug.xcconfig"; path = "Target Support Files/Pods-SummerVacationHomework/Pods-SummerVacationHomework.debug.xcconfig"; sourceTree = "<group>"; };
+		C60CA1F923028542002DB6D0 /* RequestWether.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestWether.swift; sourceTree = "<group>"; };
+		C60CA1FB23028DB1002DB6D0 /* ResponseWether.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseWether.swift; sourceTree = "<group>"; };
+		C693FEEE230166AC003B5FE1 /* SummerVacationHomework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SummerVacationHomework.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C693FEF1230166AC003B5FE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C693FEF3230166AC003B5FE1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C693FEF6230166AC003B5FE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C693FEF8230166AD003B5FE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C693FEFB230166AD003B5FE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C693FEFD230166AD003B5FE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6D338D423068F8A00BD3EED /* JSONDataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDataParser.swift; sourceTree = "<group>"; };
+		C6E50AED230C36860007F114 /* SearchWeatherRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchWeatherRequest.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C693FEEB230166AC003B5FE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FC0B8346F61CDB7EB7D22B4 /* Pods_SummerVacationHomework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		46739E14321DA503C7F8771B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F34C5215EEB44D7A7433773 /* Pods_SummerVacationHomework.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C693FEE5230166AC003B5FE1 = {
+			isa = PBXGroup;
+			children = (
+				C693FEF0230166AC003B5FE1 /* SummerVacationHomework */,
+				C693FEEF230166AC003B5FE1 /* Products */,
+				D04A69073F11D2E1F7EC6AB9 /* Pods */,
+				46739E14321DA503C7F8771B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C693FEEF230166AC003B5FE1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C693FEEE230166AC003B5FE1 /* SummerVacationHomework.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C693FEF0230166AC003B5FE1 /* SummerVacationHomework */ = {
+			isa = PBXGroup;
+			children = (
+				C693FEF1230166AC003B5FE1 /* AppDelegate.swift */,
+				C693FEF3230166AC003B5FE1 /* ViewController.swift */,
+				C6E50AED230C36860007F114 /* SearchWeatherRequest.swift */,
+				C60CA1F923028542002DB6D0 /* RequestWether.swift */,
+				C6D338D423068F8A00BD3EED /* JSONDataParser.swift */,
+				C60CA1FB23028DB1002DB6D0 /* ResponseWether.swift */,
+				C693FEF5230166AC003B5FE1 /* Main.storyboard */,
+				C693FEF8230166AD003B5FE1 /* Assets.xcassets */,
+				C693FEFA230166AD003B5FE1 /* LaunchScreen.storyboard */,
+				C693FEFD230166AD003B5FE1 /* Info.plist */,
+			);
+			path = SummerVacationHomework;
+			sourceTree = "<group>";
+		};
+		D04A69073F11D2E1F7EC6AB9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B676F386B88F05CCB9CC90BF /* Pods-SummerVacationHomework.debug.xcconfig */,
+				5166D58790380C778C0C9922 /* Pods-SummerVacationHomework.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C693FEED230166AC003B5FE1 /* SummerVacationHomework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C693FF00230166AD003B5FE1 /* Build configuration list for PBXNativeTarget "SummerVacationHomework" */;
+			buildPhases = (
+				0BB6AB6A40AD6E78E08A57DC /* [CP] Check Pods Manifest.lock */,
+				C693FEEA230166AC003B5FE1 /* Sources */,
+				C693FEEB230166AC003B5FE1 /* Frameworks */,
+				C693FEEC230166AC003B5FE1 /* Resources */,
+				AC97A163465240E1C5BE1C6B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SummerVacationHomework;
+			productName = SummerVacationHomework;
+			productReference = C693FEEE230166AC003B5FE1 /* SummerVacationHomework.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C693FEE6230166AC003B5FE1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = KaitoKudou;
+				TargetAttributes = {
+					C693FEED230166AC003B5FE1 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = C693FEE9230166AC003B5FE1 /* Build configuration list for PBXProject "SummerVacationHomework" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C693FEE5230166AC003B5FE1;
+			productRefGroup = C693FEEF230166AC003B5FE1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C693FEED230166AC003B5FE1 /* SummerVacationHomework */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C693FEEC230166AC003B5FE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C693FEFC230166AD003B5FE1 /* LaunchScreen.storyboard in Resources */,
+				C693FEF9230166AD003B5FE1 /* Assets.xcassets in Resources */,
+				C693FEF7230166AC003B5FE1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0BB6AB6A40AD6E78E08A57DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SummerVacationHomework-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC97A163465240E1C5BE1C6B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SummerVacationHomework/Pods-SummerVacationHomework-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SummerVacationHomework/Pods-SummerVacationHomework-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SummerVacationHomework/Pods-SummerVacationHomework-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C693FEEA230166AC003B5FE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C60CA1FA23028543002DB6D0 /* RequestWether.swift in Sources */,
+				C6D338D523068F8A00BD3EED /* JSONDataParser.swift in Sources */,
+				C6E50AEE230C36860007F114 /* SearchWeatherRequest.swift in Sources */,
+				C60CA1FC23028DB1002DB6D0 /* ResponseWether.swift in Sources */,
+				C693FEF4230166AC003B5FE1 /* ViewController.swift in Sources */,
+				C693FEF2230166AC003B5FE1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C693FEF5230166AC003B5FE1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C693FEF6230166AC003B5FE1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C693FEFA230166AD003B5FE1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C693FEFB230166AD003B5FE1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C693FEFE230166AD003B5FE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C693FEFF230166AD003B5FE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C693FF01230166AD003B5FE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B676F386B88F05CCB9CC90BF /* Pods-SummerVacationHomework.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DX3FKMWYLL;
+				INFOPLIST_FILE = SummerVacationHomework/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.icloud-kaitokudou2468110921.SummerVacationHomework";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C693FF02230166AD003B5FE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5166D58790380C778C0C9922 /* Pods-SummerVacationHomework.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DX3FKMWYLL;
+				INFOPLIST_FILE = SummerVacationHomework/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.icloud-kaitokudou2468110921.SummerVacationHomework";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C693FEE9230166AC003B5FE1 /* Build configuration list for PBXProject "SummerVacationHomework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C693FEFE230166AD003B5FE1 /* Debug */,
+				C693FEFF230166AD003B5FE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C693FF00230166AD003B5FE1 /* Build configuration list for PBXNativeTarget "SummerVacationHomework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C693FF01230166AD003B5FE1 /* Debug */,
+				C693FF02230166AD003B5FE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C693FEE6230166AC003B5FE1 /* Project object */;
+}

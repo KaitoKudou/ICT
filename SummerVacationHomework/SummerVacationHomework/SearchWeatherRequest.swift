@@ -20,7 +20,7 @@ final class WeatherApi{
             return .get
         }
         var path: String{
-            return "/v1"
+            return ""
         }
         /*var parameters: Any?{
             //return "?city=\(query)"

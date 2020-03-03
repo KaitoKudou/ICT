@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        Session.send(WeatherApi.SearchWeather(query: "020030")){ result in
+        Session.send(WeatherApi.SearchWeather(query: "017010")){ result in
             switch result{
             case .success(let response):
                 print(response)

@@ -15,7 +15,7 @@ protocol WetherRequest: Request {}
 extension WetherRequest {
     var baseURL: URL {
         // v1がpathになる
-        return URL(string: "http://weather.livedoor.com/forecast/webservice/json/v1")!
+        return URL(string: "http://weather.livedoor.com/forecast/webservice/json/")!
     }
     
 }

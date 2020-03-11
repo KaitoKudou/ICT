@@ -13,7 +13,7 @@ class ViewController: UIViewController, UITableViewDataSource{
     
     @IBOutlet weak var tableView: UITableView!
     
-    var forecasts: [Forecasts] = []
+    public var forecasts: [Forecasts] = []
     var location: Location!
     var x : Float = 0.0
     
@@ -43,6 +43,7 @@ class ViewController: UIViewController, UITableViewDataSource{
         //print(self.location as Any) // ここで中身が空っぽになる。なぜ？？？
         
         tableView.dataSource = self
+        tableView.register(UINib(nibName: "CustomCell", bundle: nil),forCellReuseIdentifier:"customCell")
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -52,8 +53,13 @@ class ViewController: UIViewController, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "wetherCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "customCell", for: indexPath)
+        if let wetherImage = try? Data(contentsOf: self.forecasts[indexPath.row].image.url){
+            cell.imageView?.image = UIImage(data: wetherImage)
+        }
+        
         cell.textLabel?.text = forecasts[indexPath.row].date
+        //cell.textLabel?.text = forecasts[indexPath.row].dateLabel
         
         return cell
     }

@@ -35,12 +35,7 @@ class ViewController: UIViewController, UITableViewDataSource{
             case .failure(let error):
                 print(error)
             }
-            
-            //print(self?.forecasts as Any) // ここでは情報が入っている
-            
         }
-        //print(self.forecasts) // ここで中身が空っぽになる。なぜ？？？
-        //print(self.location as Any) // ここで中身が空っぽになる。なぜ？？？
         
         tableView.dataSource = self
         tableView.register(UINib(nibName: "CustomCell", bundle: nil),forCellReuseIdentifier:"customCell")
@@ -53,14 +48,9 @@ class ViewController: UIViewController, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "customCell", for: indexPath)
-        if let wetherImage = try? Data(contentsOf: self.forecasts[indexPath.row].image.url){
-            cell.imageView?.image = UIImage(data: wetherImage)
-        }
-        
-        cell.textLabel?.text = forecasts[indexPath.row].date
-        //cell.textLabel?.text = forecasts[indexPath.row].dateLabel
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "customCell", for: indexPath) as! CustomCell
+        cell.setCell(cityName: location.city, date: forecasts[indexPath.row].date, telop: forecasts[indexPath.row].telop, wetherImageURL: forecasts[indexPath.row].image.url, max: forecasts[indexPath.row].temperature.max?.celsius, min: forecasts[indexPath.row].temperature.min?.celsius)
+       
         return cell
     }
 

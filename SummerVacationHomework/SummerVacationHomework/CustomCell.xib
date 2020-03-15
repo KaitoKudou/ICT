@@ -95,7 +95,7 @@
                 <outlet property="telopLabel" destination="ivb-gt-IDy" id="XRs-N7-iRI"/>
                 <outlet property="wetherImage" destination="qi7-4Z-rC8" id="rkS-6d-w8X"/>
             </connections>
-            <point key="canvasLocation" x="-16" y="34"/>
+            <point key="canvasLocation" x="59" y="9"/>
         </tableViewCell>
     </objects>
 </document>

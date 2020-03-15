@@ -39,19 +39,29 @@ class ViewController: UIViewController, UITableViewDataSource{
         
         tableView.dataSource = self
         tableView.register(UINib(nibName: "CustomCell", bundle: nil),forCellReuseIdentifier:"customCell")
+        tableView.register(UINib(nibName: "TomorrowCustomCell", bundle: nil), forCellReuseIdentifier:"tomorrowCustomCell")
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print(self.forecasts.count) // ０になる。　うーん
+        print(self.forecasts.count)
         return self.forecasts.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "customCell", for: indexPath) as! CustomCell
-        cell.setCell(cityName: location.city, date: forecasts[indexPath.row].date, telop: forecasts[indexPath.row].telop, wetherImageURL: forecasts[indexPath.row].image.url, max: forecasts[indexPath.row].temperature.max?.celsius, min: forecasts[indexPath.row].temperature.min?.celsius)
-       
-        return cell
+        switch indexPath.row {
+        case 0:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "customCell", for: indexPath) as! CustomCell
+             cell.setCell(cityName: location.city, date: forecasts[indexPath.row].date, telop: forecasts[indexPath.row].telop, wetherImageURL: forecasts[indexPath.row].image.url, max: forecasts[indexPath.row].temperature.max?.celsius, min: forecasts[indexPath.row].temperature.min?.celsius)
+            
+             return cell
+        default:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "tomorrowCustomCell", for: indexPath) as! TomorrowCustomCell
+            cell.setTomorrowCell(date: forecasts[indexPath.row].date, telop: forecasts[indexPath.row].telop, wetherImageURL: forecasts[indexPath.row].image.url, max: forecasts[indexPath.row].temperature.max?.celsius, min: forecasts[indexPath.row].temperature.min?.celsius)
+            
+             return cell
+        }
+        
     }
 
 
